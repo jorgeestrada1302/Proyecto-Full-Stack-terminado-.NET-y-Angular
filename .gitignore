@@ -1,0 +1,12 @@
+# Ignorar basura de .NET
+bin/
+obj/
+.idea/
+
+# Ignorar basura de Angular
+node_modules/
+dist/
+.angular/
+
+# Mac
+.DS_Store

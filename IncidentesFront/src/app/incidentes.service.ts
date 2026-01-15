@@ -16,7 +16,7 @@ export interface Incidente {
 })
 export class IncidentesService {
   // Tu Backend está en el puerto 5027
-  private apiUrl = 'http://3.221.163.219:5000/api/Incidentes';
+  private apiUrl = 'http://3.238.149.168:5000/api/Incidentes';
 
   constructor(private http: HttpClient) { }
 

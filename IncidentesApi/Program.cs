@@ -32,7 +32,7 @@ var app = builder.Build();
 // 3. USAR CORS (¡IMPORTANTE! Debe ir ANTES de MapControllers)
 app.UseCors("PermitirTodo");
 
-if (app.Environment.IsDevelopment())
+// if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();

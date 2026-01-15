@@ -1,0 +1,33 @@
+<div class="contenedor-principal">
+  <div class="sidebar">
+    <h2>Reportar Incidente</h2>
+    <p class="instruccion">1. Haz clic en el mapa para ubicar.</p>
+
+    <div class="campo">
+      <label>Tipo:</label>
+      <select [(ngModel)]="nuevoIncidente.tipo">
+        <option value="">-- Seleccionar --</option>
+        <option value="Accidente">choque</option>
+        <option value="Robo">Robo</option>
+        <option value="Arbol">Caída de Árbol</option>
+        <option value="Bache">Bache</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label>Descripción:</label>
+      <textarea [(ngModel)]="nuevoIncidente.descripcion" rows="3" placeholder="Detalles..."></textarea>
+    </div>
+
+    <div class="coordenadas">
+      <p><strong>Lat:</strong> {{nuevoIncidente.latitud | number:'1.4-4'}}</p>
+      <p><strong>Lng:</strong> {{nuevoIncidente.longitud | number:'1.4-4'}}</p>
+    </div>
+
+    <button (click)="guardar()" class="boton-guardar">Registrar Incidente</button>
+  </div>
+
+  <div id="map"></div>
+</div>
+
+
